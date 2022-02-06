@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;1,300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <section id="section1">
+        <div class="container">
+            <header>
+                <img src="images/logo.png" alt="logo">
+                <nav id="main-menu">
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="#" id="menu-icon" onclick="toggleMenu();" style="display: none;">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </header>
+            <div id="main-heading-text">
+                <h1>Hi there! we are the new kids on the block and wwe build awsome websites and mobile apps</h1>
+                <a href="#" class="big-button">Work with us</a>
+            </div>
+            
+        </div>
+    </section>
+    <section id="section2">
+        <div class="container">
+            <div class="title-box">
+                <h2>Services we provide</h2>
+                <div class="straight-line"></div>
+                <p>We are working with both individuals an buisnesses form all over the globe to create awesome websites and mobile apps</p>
+            </div>
+            <div class="blurb-row">
+                <div class="blurb">
+                    <img src="images/flag-icon.png" alt="">
+                    <h3>Branding</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="blurb">
+                    <img src="images/crayon-icon.png" alt="">
+                    <h3>Design</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                </div>
+                <div class="blurb">
+                    <img src="images/gears-icon.png" alt="">
+                    <h3>Development</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="blurb">
+                    <img src="images/rocket-icon.png" alt="">
+                    <h3>Rocket science</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section3">
+        <div class="container">
+            <div class="title-box-form-section">
+                <h2>Get in touch</h2>
+                <div class="straight-line2"></div>
+                <p>1600 Pennylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+             </div>
+             <div id="contact-form">
+                 <form>
+                     <div class="form-clom">
+                        <input type="text" name="name" placeholder="Your Name">
+                        <input type="text" name="email" placeholder="Your Email">
+                     </div>
+                     <div class="form-clom">
+                         <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                     </div>
+                    <div class="form-clom">
+                         <input type="submit" class="bug-button" value="Send Message">
+                    </div>
+                 </form>
+             </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="social-networks">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li class="active2"><a href="#">Twitter</a></li>
+                <li><a href="#">Google+</a></li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Behanece</a></li>
+                <li><a href="#">Dribbble</a></li>
+                <li><a href="#">GitHub</a></li>
+            </ul> 
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        function toggleMenu(){
+            var x = document.getElementById("main-menu");
+            if (x.style.display === "block"){
+                x.style.display = "none";
+            }else{
+                x.style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>
